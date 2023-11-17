@@ -1,0 +1,21 @@
+.images {
+    display: flex;
+    width: 100vw;
+    gap: 50px;
+    height: fit-content;
+    overflow: scroll;
+}
+.images img {
+    width: 600px;
+}
+.btnBar {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+button {
+    width: 100px;
+}
