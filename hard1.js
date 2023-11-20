@@ -1,18 +1,19 @@
-let initBox = document.getElementById("initBox");
-let boxContainer = document.getElementById("boxes")
-let array = [];
-let dividing = () => {
-    for (let i = 0; i < 2; i++){
-        let width = initBox.offsetWidth / 2
-        let height = initBox.offsetHeight / 2
-        let box = document.createElement("div")
-        box.classList.add("box")
-        box.style.height = Number(`${height}`)
-        box.offsetWidth = Number(`${width}`)
-        console.log(box.offsetHeight)
+let containerDiv = document.getElementById("boxes");
+let boxDiv = document.querySelectorAll(".box");
+for (let i = 0; i < boxDiv.length; i++){
+    console.log(boxDiv);
+    let dividing = () => {
+        console.log("clicked on other boxes");
+        for (let j = 0; j < 2; j++){
+            let box = document.createElement("div");
+            box.classList.add("box");
+            containerDiv.appendChild(box);
+            box.style.backgroundColor = 
+            'rgb(' + Math.round(Math.random() * 255) +
+            ',' + Math.round(Math.random() * 255) +
+            ',' + Math.round(Math.random() * 255) + ')'
+        }
     }
+    console.log(typeof boxDiv);
+    boxDiv[i].addEventListener("click", dividing)
 }
-console.log(array)
-initBox.addEventListener("click", dividing)
-
-

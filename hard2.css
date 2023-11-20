@@ -1,0 +1,15 @@
+#puzzle {
+    display: flex;
+    flex-wrap: wrap;
+    width: 360px;
+    height: 360px;
+    margin: 0 auto;
+}
+.images {
+    width: 118px;
+    height: 118px;
+    border: 1px solid black;
+}
+body {
+    background-color: rgb(40, 39, 39);
+}
