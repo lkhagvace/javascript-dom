@@ -1,0 +1,12 @@
+#container {
+    display: flex;
+    width: 600px;
+    height: 600px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+#container img{
+    width: 198px;
+    height: 198px;
+    border: 1px solid black;
+}
